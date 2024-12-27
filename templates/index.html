@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlipBook</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        #flipbook .page {
+            background: white;
+        }
+
+        #flipbook .shadow, #flipbook.shadow {
+            -webkit-box-shadow: 0 4px 10px #666;
+            -moz-box-shadow: 0 4px 10px #666;
+            -ms-box-shadow: 0 4px 10px #666;
+            -o-box-shadow: 0 4px 10px #666;
+            box-shadow: 0 4px 10px #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="flipbook">
+        <div>
+            <img src="images/page_1.png" alt="page_1" width="100%" height="100%">
+        </div>
+        <div>
+            <img src="images/page_2.png" alt="page_2" width="100%" height="100%">
+        </div>
+        <div>
+            <img src="images/page_3.png" alt="page_3"width="100%" height="100%" >
+        </div>
+        <div>
+            <img src="images/page_4.png" alt="page_4" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_5.png" alt="page_5" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_6.png" alt="page_6" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_7.png" alt="page_7" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_8.png" alt="page_8" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_9.png" alt="page_9" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_10.png" alt="page_10" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_11.png" alt="page_11" width="100%" height="100%">
+
+        </div>
+        <div>
+            <img src="images/page_12.png" alt="page_12" width="100%" height="100%">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#flipbook').turn({
+                width: 1500,
+                height: 500,
+                page: 1,
+                autoCenter: true,
+                duration: 2000
+            });
+        });
+    </script>
+</body>
+</html>
